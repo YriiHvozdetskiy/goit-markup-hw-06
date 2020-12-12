@@ -771,6 +771,10 @@ button {
     color: var(--white-text-color);
 }
 
+.join {
+    margin-right: 93px;
+}
+
 .join-title {
     font-weight: 700;
     font-size: 14px;
@@ -812,4 +816,56 @@ button {
     height: 20px;
 
     fill: currentColor;
+}
+
+.form-footer--wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-footer--group .text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+
+    margin-bottom: 20px;
+}
+
+.form-footer--wrapper .email {
+    width: 358px;
+    height: 50px;
+
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: var(--hero-footer-bg-color);
+}
+
+.form-footer--wrapper .email::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.form-footer--wrapper .btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 28px;
+
+    border: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background: var(--accent-color);
+    color: var(--white-text-color);
 }
