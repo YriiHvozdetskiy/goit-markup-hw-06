@@ -7,7 +7,7 @@
     --bg-color: #F5F4FA;
     --header-logo-span: #000000;
     --hero-footer-bg-color: #2F303A;
-    --modal-bg-color: #fff;
+    --bg-color-white: #fff;
     --icon-current-color: #AFB1B8;
     --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -109,7 +109,7 @@ button {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--time-distribution-function), opacity 250ms var(--time-distribution-function);
 
-    background: var(--modal-bg-color);
+    background: var(--bg-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
@@ -130,7 +130,7 @@ button {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    background: var(--modal-bg-color);
+    background: var(--bg-color-white);
 }
 
 .btn-modal-close::before,
@@ -856,26 +856,67 @@ button {
 }
 
 .form-footer--wrapper .btn {
+    position: relative;
     display: flex;
     align-items: center;
     font-weight: 700;
+
+    width: 200px;
+
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
 
     padding: 10px 28px;
+    overflow: hidden;
 
     border: transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--white-text-color);
+
+    transition: background-color 250ms var(--time-distribution-function), color 250ms var(--time-distribution-function);
 }
 
-.form-footer--wrapper .icon{
+.form-footer--wrapper .btn:hover {
+    background: var(--bg-color-white);
+    color: var(--accent-color);
+}
+
+.form-footer--wrapper .btn::before {
+    content: '';
     width: 24px;
     height: 24px;
-    fill: currentColor;
 
-    margin-left: 10px;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+
+    background: url(../images/system/icon-send-white.svg) no-repeat;
+
+    transition: transform 250ms var(--time-distribution-function);
+}
+
+.form-footer--wrapper .btn:hover:before {
+    transform: translateY(-24px);
+}
+
+.form-footer--wrapper .btn::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    bottom: -24px;
+    right: 28px;
+
+    background: url(../images/system/icon-send-accent.svg) no-repeat;
+
+    transform: translateY(24px);
+    transition: transform 250ms var(--time-distribution-function);
+}
+
+.form-footer--wrapper .btn:hover::after {
+    transform: translateY(-37px);
 }
