@@ -341,6 +341,13 @@ button {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: transparent;
+
+    transition: color 250ms var(--time-distribution-function), background-color 250ms var(--time-distribution-function);
+}
+
+.hero .btn:hover{
+    color:var(--accent-color);
+    background-color: var(--bg-color-white);
 }
 
 /* ======= Студія / benefits css =======*/
