@@ -54,6 +54,34 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="btn-modal-close" data-modal-close></button>
+                    <form class="form-modal">
+                        <div class="form-modal--group" role="group">
+                            <p class="text">Оставьте свои данные, мы вам перезвоним</p>
+                            <div class="name-wrapper">
+                                <label for="name">Имя</label>
+                                <input type="text" class="name" name="name" id="name">
+                            </div>
+                            <div class="tel-wrapper">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" class="tel" name="tel" id="tel">
+                            </div>
+                            <div class="email-wrapper">
+                                <label for="email">Почта</label>
+                                <input type="email" class="email" name="email" id="email">
+                            </div>
+                            <div class="textarea-wrapper">
+                                <label for="textarea">Комментарий</label>
+                                <textarea class="textarea" name="textarea" id="textarea" rows="10" placeholder="Введите текст">
+                                </textarea>
+                            </div>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">Соглашаюсь с рассылкой и принимаю</label>
+                                <a href="#">Условия договора</a>
+                            </div>
+                            <button class="btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
