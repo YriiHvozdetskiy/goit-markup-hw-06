@@ -243,7 +243,6 @@ button {
 .form-item input:focus~.icon {
     fill: currentColor;
     transition: fill 250ms var(--time-distribution-function);
-
 }
 
 .form-item input:focus+label,
