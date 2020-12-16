@@ -172,8 +172,19 @@ button {
 
 .form-item {
     position: relative;
-    width: 448px;
     margin-bottom: 28px;
+}
+
+.form-item:nth-last-child(2){
+    margin-bottom: 20px;
+}
+
+.form-item:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.form-modal--list{
+    margin-bottom: 30px;
 }
 
 .form-item .textarea,
@@ -183,7 +194,7 @@ button {
     outline: none;
 }
 
-.form-item input {
+.form-item input:not(:nth-last-child(1)) {
     width: 100%;
     height: 40px;
 
@@ -288,7 +299,13 @@ button {
     height: 120px;
 
     padding: 15px;
+    margin-bottom: 20px;
 }
+
+.form-item.box{
+    display: flex;
+}
+
 
 
 
