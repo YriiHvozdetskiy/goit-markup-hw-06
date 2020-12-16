@@ -166,10 +166,6 @@ button {
 
 /* =============== форма =============== */
 
-.form-item .textarea {
-    resize: none;
-}
-
 .form-item {
     position: relative;
     margin-bottom: 28px;
@@ -284,10 +280,6 @@ button {
     letter-spacing: 0.01em;
 }
 
-.form-item {
-    display: block;
-}
-
 .form-item .icon {
     width: 18px;
     height: 18px;
@@ -300,6 +292,8 @@ button {
 
     padding: 15px;
     margin-bottom: 20px;
+
+    resize: none;
 }
 
 .form-item.box{
