@@ -56,29 +56,37 @@
                     <button class="btn-modal-close" data-modal-close></button>
                     <form class="form-modal" autocomplete="off">
                         <div class="form-modal--group" role="group">
-                            <p class="text">Оставьте свои данные, мы вам перезвоним</p>
+                            <p class="form-modal--text">Оставьте свои данные, мы вам перезвоним</p>
+                            <ul class="form-modal--list">
+                                <li class="form-item">
+                                    <input class="name" type="text" name="name" id="name" placeholder=" ">
+                                    <label class="label-text" for="name">Имя</label>
+                                    <svg class="icon">
+                                        <use href="./images/system/sprite.svg#modal-icon-username"></use>
+                                    </svg>
+                                </li>
+                                <li class="form-item">
+                                    <input type="tel" class="tel" name="tel" id="tel" placeholder=" ">
+                                    <label class="label-text" for="tel">Телефон</label>
+                                    <svg class="icon">
+                                        <use href="./images/system/sprite.svg#modal-icon-phone"></use>
+                                    </svg>
+                                </li>
+                                <li class="form-item">
+                                    <input type="email" class="email" name="email" id="email" placeholder=" ">
+                                    <label class="label-text" for="email">Почта</label>
+                                    <svg class="icon">
+                                        <use href="./images/system/sprite.svg#modal-icon-email"></use>
+                                    </svg>
+                                </li>
+                                <li class="form-item">
+
+                                </li>
+                                <li class="form-item">
+
+                                </li>
+                            </ul>
                             <label class="form-field">
-                                <input class="name" type="text" name="name">
-                                <span class="label-text">Имя</span>
-                                <svg class="icon">
-                                    <use href="./images/system/sprite.svg#modal-icon-username"></use>
-                                </svg>
-                            </label>
-                            <label class="form-field">
-                                <input type="tel" class="tel" name="tel">
-                                <span class="label-text">Телефон</span>
-                                <svg class="icon">
-                                    <use href="./images/system/sprite.svg#modal-icon-phone"></use>
-                                </svg>
-                            </label>
-                            <label class="form-field">
-                                <input type="email" class="email" name="email">
-                                <span class="label-text">Почта</span>
-                                <svg class="icon">
-                                    <use href="./images/system/sprite.svg#modal-icon-email"></use>
-                                </svg>
-                            </label>
-                            <!-- <label class="form-field">
                                 <span class="label-text">Комментарий</span>
                                 <textarea class="textarea" name="textarea" rows="10" placeholder="Введите текст"></textarea>
                             </label>
@@ -86,7 +94,7 @@
                                 <input type="checkbox" class="checkbox" name="checkbox" id="checkbox">
                                 <label class="form-label" for="checkbox">Соглашаюсь с рассылкой и принимаю</label>
                                 <a href="#">Условия договора</a>
-                            </div> -->
+                            </div>
                             <button class="btn" type="submit">Отправить</button>
                         </div>
                     </form>
