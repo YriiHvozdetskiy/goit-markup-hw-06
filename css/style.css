@@ -352,7 +352,7 @@ button {
 }
 
 .form-item .checkbox+.icon-check {
-    fill: #FFFFFF;
+    fill: var(--bg-color-white);
 }
 
 .form-item .checkbox:checked+.icon-check {
