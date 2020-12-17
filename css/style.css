@@ -166,20 +166,24 @@ button {
 
 /* =============== форма =============== */
 
+.form-modal {
+    padding-bottom: 40px;
+}
+
 .form-item {
     position: relative;
     margin-bottom: 28px;
 }
 
-.form-item:nth-last-child(2){
+.form-item:nth-last-child(2) {
     margin-bottom: 20px;
 }
 
-.form-item:nth-last-child(1){
+.form-item:nth-last-child(1) {
     margin-bottom: 0px;
 }
 
-.form-modal--list{
+.form-modal--list {
     margin-bottom: 30px;
 }
 
@@ -296,12 +300,32 @@ button {
     resize: none;
 }
 
-.form-item.box{
+.form-item.box {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.form-item .form-label {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.form-item .form-link {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: underline;
+
+    color: var(--accent-color);
 }
 
 
+.form-modal--group .form-btn.btn{
+    margin-top: 0px;
+}
 
+.form-modal--group .form-btn.btn:hover{
+    border:solid 1px var(--accent-color);
+}
 
 
 
@@ -486,14 +510,15 @@ button {
     color: var(--white-text-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: transparent;
+    border: 1px solid var(--accent-color);
 
-    transition: color 250ms var(--time-distribution-function), background-color 250ms var(--time-distribution-function);
+    transition: color 250ms var(--time-distribution-function), background-color 250ms var(--time-distribution-function), border-color 250ms var(--time-distribution-function) ;
 }
 
 .hero .btn:hover {
     color: var(--accent-color);
     background-color: var(--bg-color-white);
+    border-color:var(--bg-color-white)
 }
 
 /* ======= Студія / benefits css =======*/
