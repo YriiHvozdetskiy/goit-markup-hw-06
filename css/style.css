@@ -285,6 +285,7 @@ button {
     width: 18px;
     height: 18px;
     color: var(--accent-color);
+    pointer-events: none;
 }
 
 .form-item .textarea {
@@ -357,7 +358,7 @@ button {
 
 .form-item .checkbox:checked+.icon-check {
     background-color: var(--accent-color);
-    border-color:var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
