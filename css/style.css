@@ -298,18 +298,12 @@ button {
     resize: none;
 }
 
-.form-item.box {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 .form-item .form-label {
     font-size: 14px;
     line-height: 1.71;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -341,26 +335,23 @@ button {
     overflow: hidden;
 }
 
-.form-item .form-label .icon-check {
-    display: inline-block;
-
+.form-item .icon-check {
+    position: relative;
     width: 16px;
     height: 15px;
     border: solid 2px var(--title-color);
     border-radius: 2px;
 
-    margin-right: 7px;
 }
 
-.form-item .checkbox+.icon-check {
-    fill: var(--bg-color-white);
-}
-
-.form-item .checkbox:checked+.icon-check {
+.checkbox:checked+.icon-check {
+    background: url(../images/system/icon-check.svg);
+    background-size: contain;
+    background-position:50% 50%;
+    border-color:var(--accent-color);
     background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
+    background-origin:border-box ;
+    }
 
 /* =============== / форма =============== */
 
