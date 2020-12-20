@@ -1044,7 +1044,7 @@ button {
     margin-bottom: 20px;
 }
 
-.form-footer--wrapper .email {
+.form-footer--wrapper .mail {
     width: 358px;
     height: 50px;
 
@@ -1060,7 +1060,7 @@ button {
     color: var(--white-text-color);
 }
 
-.form-footer--wrapper .email::placeholder {
+.form-footer--wrapper .mail::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
