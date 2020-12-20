@@ -1056,6 +1056,8 @@ button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: var(--hero-footer-bg-color);
+
+    color: var(--white-text-color);
 }
 
 .form-footer--wrapper .email::placeholder {
