@@ -23,3 +23,5 @@
     background-color: var(--accent-color);
     border-color:var(--accent-color);
 } -- коли стандартний чекбокс в стані чек наш кастомний чекбокс зміняю колір за макетом 
+// ===========================
+зробив чекс бокс через after <label></label>
